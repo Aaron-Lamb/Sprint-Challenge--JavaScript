@@ -37,7 +37,9 @@ function greeting(first, last){
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: 
+// Explanation: Because a function can accept variables outside of its' own scope. When a variable is 
+// declared within a function, it is capable of being called outside of that function. Closure allows variables
+// to be called in interconnected scopes.
 
 
 const external = "I'm outside the function";
