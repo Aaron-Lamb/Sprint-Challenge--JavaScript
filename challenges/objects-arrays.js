@@ -94,14 +94,18 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [];
-let nameandemail = contactInfo.push(`${graduates.first_name}, ${graduates.email}`);
-console.log(contactInfo);
+// const contactInfo = [];
+// let nameandemail = contactInfo.push(`${graduates.first_name}, ${graduates.email}`);
+// console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-// const unisWithUni = [];
-// let Uniform = unisWithUni.push(graduates.includes("Uni"));
-// console.log(Uniform);
+const unisWithUni = [];
+for (let i = 0; i <= graduates.length; i++){
+  unisWithUni.push(graduates.filter(() => {
+    graduates.university.includes('Uni')
+  }));
+}     
+ console.log(unisWithUni);
 
 
 // ==== ADVANCED Array Methods ====
